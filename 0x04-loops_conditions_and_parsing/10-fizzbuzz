@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Solve the fizzbuzz problem in bash
+for i in {1..100}; do
+	fiveAns=$((i % 5))
+	threeAns=$((i % 3))
+	if [ $fiveAns -eq 0 ] && [ $threeAns -eq 0 ]; then
+		echo "FizzBuzz"
+	elif [ $fiveAns -eq 0 ]; then
+		echo "Buzz"
+	elif [ $threeAns -eq 0 ]; then
+		echo "Fizz"
+	else
+		echo "$i"
+	fi
+done

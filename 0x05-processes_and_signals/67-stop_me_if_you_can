@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Kill a process running on another terminal using pkill
+pkill -f 7-highlander

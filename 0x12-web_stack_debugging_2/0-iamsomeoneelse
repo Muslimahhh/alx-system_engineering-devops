@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Run a passed command as another user
+
+su -s /bin/bash -c 'whoami' "$1"

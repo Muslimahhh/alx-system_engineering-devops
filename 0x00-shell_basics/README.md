@@ -1,1 +1,1 @@
-a non empty readme
+This is a project on shell basics that is testing proficiency in writing bash scripts and making them executable using the `chmod u+x` command

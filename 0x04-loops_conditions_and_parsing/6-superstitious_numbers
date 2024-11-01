@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Uses a case statement in a while loop to check for exceptions
+count=0
+while [ $count -lt 20 ]; do
+	echo "$((count + 1))"
+	case $count in
+		3)
+			echo "bad luck from China";;
+		8)
+			echo "bad luck from Japan";;
+		16)
+			echo "bad luck from Italy";;
+	esac
+	((count++))
+done

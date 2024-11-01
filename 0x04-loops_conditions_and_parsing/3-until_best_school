@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Uses the until loop to display a string for a specified no of times
+count=0
+until [ $count -ge 10 ]; do
+	echo "Best School"
+	((count++))
+done

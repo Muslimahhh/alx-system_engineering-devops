@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Display a string for a specified no using a while loop, with an exception
+count=0
+while [ $count -lt 10 ]; do
+	echo "Best School"
+	if [ $count -eq 8 ]; then
+		echo "Hi"
+	fi
+	((count++))
+done

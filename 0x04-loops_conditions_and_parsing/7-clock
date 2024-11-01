@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Creates a demo of a clock by writing hours and minutes
+hour=0
+while [ $hour -lt 13 ]; do
+	echo "Hour: $hour"
+	minutes=1
+	while [ $minutes -lt 60 ]; do
+		echo "$minutes"
+		((minutes++))
+	done
+	((hour++))
+done

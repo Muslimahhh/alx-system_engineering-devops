@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Get information from a file and print the info on to stdout
+filename="school"
+if [ -e $filename ]; then
+	echo "school file exists"
+	if [ -s $filename ]; then
+		echo "school file is not empty"
+	else
+		echo "school file is empty"
+	fi
+	if [ -f $filename ]; then
+		echo "school is a regular file"
+	fi
+else
+	echo "school file does not exist"
+fi

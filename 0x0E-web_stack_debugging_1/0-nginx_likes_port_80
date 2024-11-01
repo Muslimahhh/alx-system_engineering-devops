@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Fix a bug not allowing the Nginx server connect to port 80 (HTTP port)
+rm /etc/nginx/sites-enabled/default
+ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart

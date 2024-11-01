@@ -1,1 +1,1 @@
-read me
+Shell, init files, variables and expansions

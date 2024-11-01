@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays a list of all running processes in a readable format
+ps -a -u -f -x

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This is to configure a server to use HAProxy as a load balancers
+# The servers used here are personal Nginx web servers
+apt-get update -y
+apt-get install --no-install-recommends -y software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-2.8
+apt-get install -y haproxy
+echo -e "frontend ade-frontend
+\tbind *:80
+\tmode http
+\tdefault_backend ade-backend
+backend ade-backend
+\tbalance roundrobin
+\tserver 520228-web-01 100.25.102.91:80 check
+\tserver 520228-web-02 100.26.241.139:80 check" | tee -a /etc/haproxy/haproxy.cfg
+echo "ENABLED=1" | tee -a /etc/default/haproxy
+service haproxy restart
