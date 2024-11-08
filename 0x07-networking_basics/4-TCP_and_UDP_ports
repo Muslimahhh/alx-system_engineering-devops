@@ -1,3 +1,4 @@
-#!/bin/env bash
-# Displays a list of listening sockets
-netstat -lp
+#!/usr/bin/env bash
+# script that displays TCP and UDP listening ports
+
+netstat -l
